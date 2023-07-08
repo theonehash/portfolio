@@ -117,11 +117,12 @@ main {
   font-size: 18px;
   padding: 10px 20px;
   text-decoration: none;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .cta-btn:hover {
   background-color: var(--accent-color);
+  transform: scale(0.9);
 }
 
 #about, #skills, #projects, #contact {
