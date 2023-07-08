@@ -1,201 +1,68 @@
-/* Color Scheme 1 */
 :root {
-  --primary-color: #333;
-  --secondary-color: #fff;
-  --accent-color: #aaa;
-}
-
-/* Color Scheme 2 */
-/*
-:root {
-  --primary-color: #222;
-  --secondary-color: #ddd;
-  --accent-color: #888;
-}
-*/
-
-/* Color Scheme 3 */
-/*
-:root {
-  --primary-color: #f44336;
-  --secondary-color: #fff;
-  --accent-color: #ffccbc;
-}
-*/
-
-/* Reset default browser styles */
-body, h1, h2, h3, p, ul, li, form {
-  margin: 0;
-  padding: 0;
+  --primary-color: darkgreen;
+  --secondary-color: ivory;
+  --accent-color: yellow;
 }
 
 body {
-  font-family: Arial, sans-serif;
   background-color: var(--secondary-color);
-  line-height: 1.5;
 }
 
 header {
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  padding: 20px;
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.nav-links {
-  list-style: none;
-}
-
-.nav-links li {
-  display: inline-block;
-  margin-right: 20px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .nav-links li a {
   color: var(--secondary-color);
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.nav-links li a:hover {
-  color: var(--accent-color);
-}
-
-.burger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
 }
 
 .burger .line {
-  width: 25px;
-  height: 3px;
   background-color: var(--secondary-color);
-  margin-bottom: 5px;
-  transition: all 0.3s;
-}
-
-.burger:hover .line {
-  background-color: var(--accent-color);
-}
-
-main {
-  padding: 50px;
 }
 
 #hero {
-  text-align: center;
-  padding: 200px 0;
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
 
-#hero h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.subtitle {
-  font-size: 24px;
-  margin-bottom: 40px;
-}
-
 .cta-btn {
-  display: inline-block;
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  font-size: 18px;
-  padding: 10px 20px;
-  text-decoration: none;
-  transition: background-color 0.3s, transform 0.3s;
 }
 
 .cta-btn:hover {
   background-color: var(--accent-color);
-  transform: scale(0.9);
 }
 
-#about, #skills, #projects, #contact {
-  margin-bottom: 50px;
-}
-
-.content h2 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.skills-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.skill {
-  text-align: center;
-}
-
-.skill-bar {
-  width: 200px;
-  height: 20px;
-  background-color: var(--accent-color);
-  border-radius: 10px;
-  overflow: hidden;
+#about,
+#skills,
+#projects,
+#contact {
+  background-color: var(--secondary-color);
 }
 
 .bar {
-  height: 100%;
   background-color: var(--primary-color);
-  transition: width 1s;
-}
-
-.skill:hover .bar {
-  width: 100%;
-}
-
-.skill h3 {
-  margin-bottom: 10px;
 }
 
 .project {
-  border: 1px solid var(--accent-color);
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin-bottom: 10px;
+  border-color: var(--accent-color);
 }
 
 input,
 textarea {
-  padding: 10px;
-  border: 1px solid var(--accent-color);
-  border-radius: 4px;
-  margin-bottom: 10px;
+  border-color: var(--accent-color);
 }
 
 button[type="submit"] {
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
 }
 
 button[type="submit"]:hover {
@@ -205,6 +72,4 @@ button[type="submit"]:hover {
 footer {
   background-color: var(--accent-color);
   color: var(--secondary-color);
-  padding: 20px;
-  text-align: center;
 }
