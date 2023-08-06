@@ -27,9 +27,10 @@
   </header>
 
   <main>
-    <section id="hero">
-      <h1>I'm Saeed Hashi</h1>
+    <section id="hero" style="padding: 50px 0; text-align: center;">
+      <h1 style="font-size: 24px;">I'm Saeed Hashi</h1>
       <p class="subtitle">A Cyber Security & Digital Forensics Graduate</p>
+      <a href="#contact" class="cta-btn">Get In Touch</a>
     </section>
 
     <section id="about">
@@ -41,33 +42,8 @@
       </div>
     </section>
 
-    <section id="skills">
-      <div class="content">
-        <h2>Skills</h2>
-        <div class="skills-container">
-          <div class="skill">
-            <h3>HTML</h3>
-            <div class="skill-bar">
-              <div class="bar html"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <h3>CSS</h3>
-            <div class="skill-bar">
-              <div class="bar css"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <h3>JavaScript</h3>
-            <div class="skill-bar">
-              <div class="bar js"></div>
-            </div>
-          </div>
-          <!-- Add more skills as needed -->
-        </div>
-      </div>
-    </section>
-
+    <!-- Rest of your sections and content -->
+</section>
     <section id="projects">
       <div class="content">
         <h2>Projects</h2>
@@ -88,8 +64,18 @@
     <section id="contact">
       <div class="content">
         <h2>Contact Me</h2>
-        <p>If you would like to contact me, please schedule an introductory call using the link below, or contact me via email, saeedhashi1@outlook.com:</p>
-        <a href="https://calendly.com/saeedhashi1/introductory-call" class="cta-btn">Schedule Introductory Call</a>
+        <form action="send_email.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
       </div>
     </section>
   </main>
