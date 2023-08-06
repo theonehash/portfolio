@@ -1,27 +1,9 @@
 /* Color Scheme 1 */
 :root {
-  --primary-color: #333;
-  --secondary-color: #fff;
-  --accent-color: #aaa;
+  --primary-color: #78ff29;  /* Vibrant Red */
+  --secondary-color:  #ffffff; ;  /* Light Gray */
+  --accent-color: #fbff04;  /* Teal Blue */
 }
-
-/* Color Scheme 2 */
-/*
-:root {
-  --primary-color: #222;
-  --secondary-color: #ddd;
-  --accent-color: #888;
-}
-*/
-
-/* Color Scheme 3 */
-/*
-:root {
-  --primary-color: #f44336;
-  --secondary-color: #fff;
-  --accent-color: #ffccbc;
-}
-*/
 
 /* Reset default browser styles */
 body, h1, h2, h3, p, ul, li, form {
